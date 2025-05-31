@@ -1,0 +1,28 @@
+module Base
+{
+  /****************************** Cars ******************************/
+
+  item MVPrisonBus
+      {
+          Weight    	   	= .01,
+          DisplayName     = Prison Bus + Keys,
+          icon 		       	= PrisonBus,
+          Type        		= Normal,
+      }
+
+  item MVArmyBus
+      {
+          Weight    	   	= .01,
+          DisplayName     = Army Bus + Keys,
+          icon 		       	= ArmyBus,
+          Type        		= Normal,
+      }
+
+  item MVSchoolBus
+  {
+      Weight    	   	= .01,
+      DisplayName     = School Bus + Keys,
+      icon 		       	= SchoolBus,
+      Type        		= Normal,
+  }
+}

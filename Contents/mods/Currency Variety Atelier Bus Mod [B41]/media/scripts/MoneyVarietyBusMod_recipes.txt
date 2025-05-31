@@ -1,0 +1,191 @@
+module MoneyVarietyBus
+{
+  imports
+  {
+    Base
+  }
+
+  /****************************** Book Purchase Options ******************************/
+    recipe Sell 25 Gems for Autotsar Tuning - Bus
+    {
+       GemScrap=25,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result: AtTuningMagBus,
+       Time: 10.0,
+       Category: Trading,
+    }
+
+    recipe Sell 50 Gems for Autotsar Tuning - Bus Bullbar 2
+    {
+       GemScrap=50,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result: Bullbar2Blueprint,
+       Time: 10.0,
+       Category: Trading,
+    }
+
+    recipe Sell 75 Gems for Autotsar Tuning - Bus Bullbar 3
+    {
+       GemScrap=75,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result: Bullbar3Blueprint,
+       Time: 10.0,
+       Category: Trading,
+    }
+
+  /****************************** Offensive Purchase Options ******************************/
+
+    recipe Sell 1 Gold Bar for a Bus Roof Box
+    {
+        GoldBar=1,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+        Result: ATA_Bus_Roof_Box_Item,
+        Time: 10.0,
+        Category: Trading,
+    }
+
+    recipe Sell 2 Gold Bar for a Bus Bullbar 1
+    {
+        GoldBar=2,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+        Result: ATA_Bus_Kengur_1_Item,
+        Time: 10.0,
+        Category: Trading,
+    }
+
+    recipe Sell 2 Gold Bar for a Bus Bullbar 2
+    {
+        GoldBar=2,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+        Result: ATA_Bus_Kengur_2_Item,
+        Time: 10.0,
+        Category: Trading,
+    }
+
+    recipe Sell 2 Gold Bar for a Bus Bullbar 3
+    {
+        GoldBar=2,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+        Result: ATA_Bus_Kengur_3_Item,
+        Time: 10.0,
+        Category: Trading,
+    }
+
+    recipe Sell 3 Gold Bar for a Bus Roof Rack
+    {
+        GoldBar=3,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+        Result: ATA_Bus_Roof_Rack,
+        Time: 10.0,
+        Category: Trading,
+    }
+
+  /****************************** Defensive Purchase Options ******************************/
+
+
+  recipe Sell 3 Silver Bar for Bus Front Door Protection
+  {
+      SilverBar=3,
+      keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+      Result: ATA_Bus_Protection_door_Item,
+      Time: 10.0,
+      Category: Trading,
+  }
+
+  recipe Sell 3 Silver Bar for Bus Rear Door Protection
+  {
+      SilverBar=3,
+      keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+      Result: ATA_Bus_Protection_door_rear_Item,
+      Time: 10.0,
+      Category: Trading,
+  }
+
+  recipe Sell 3 Silver Bar for Bus Wheel Protection
+  {
+      SilverBar=3,
+      keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+      Result: ATA_Bus_Protection_wheels_Item,
+      Time: 10.0,
+      Category: Trading,
+  }
+
+  recipe Sell 3 Silver Bar for Bus Front Window Protection
+  {
+      SilverBar=3,
+      keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+      Result: ATA_Bus_Protection_windows_front_Item,
+      Time: 10.0,
+      Category: Trading,
+  }
+
+  recipe Sell 3 Silver Bar for Bus Right Window Protection
+  {
+      SilverBar=3,
+      keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+      Result: ATA_Bus_Protection_windows_right_Item,
+      Time: 10.0,
+      Category: Trading,
+  }
+
+  recipe Sell 3 Silver Bar for Bus Left Window Protection
+  {
+      SilverBar=3,
+      keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+      Result: ATA_Bus_Protection_windows_left_Item,
+      Time: 10.0,
+      Category: Trading,
+  }
+
+  /****************************** Car Purchase Options ******************************/
+  recipe Sell 125 Pearls for Prison Bus
+  {
+     Pearls=125,
+     keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+     Result: MVPrisonBus,
+     Time: 10.0,
+     OnCreate:CarCraftingATAPB_OnCreate,
+     RemoveResultItem:True,
+     Category: Trading,
+  }
+
+  recipe Sell 125 Pearls for Army Bus
+  {
+     Pearls=125,
+     keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+     Result: MVArmyBus,
+     Time: 10.0,
+     OnCreate:CarCraftingATAAB_OnCreate,
+     RemoveResultItem:True,
+     Category: Trading,
+  }
+
+  recipe Sell 125 Pearls for School Bus
+  {
+     Pearls=125,
+     keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+     Result: MVSchoolBus,
+     Time: 10.0,
+     OnCreate:CarCraftingATASB_OnCreate,
+     RemoveResultItem:True,
+     Category: Trading,
+  }
+
+}
